@@ -7,37 +7,37 @@
 // 1) Create three new variables:
 //    - A variable that stores the name of an online course of your choice
 
-let Course_name = "name of course";
+let courseName ='Zone';
 
 //    - A variable that stores the price of that course
 
-let Course_price = 10000;
+let coursePrice =5000 + '$';
 
 //    - A variable that stores the three main goals that you have, when taking this course
 
-let Course_goals = ["goal1", "goal2", "goal3"];
+let courseGoals = ['learn', 'study', 'bulid'];
 
 // 2) Output ("alert") the three variable values
 
-alert(Course_name);
-alert(Course_price);
-alert(Course_goals);
+alert(courseName);
+alert(coursePrice);
+alert(courseGoals);
 
 // 3) Try "grouping" the three variables together and still output their values thereafter
 
 let My_Course = {
-  Course_name,
-  Course_price,
-  Course_goals,
+  courseName,
+  coursePrice,
+  courseGoals,
 };
 
-alert(My_Course.Course_name);
-alert(My_Course.Course_price);
-alert(My_Course.Course_goals);
+alert(My_Course.courseName);
+alert(My_Course.coursePrice);
+alert(My_Course.courseGoals);
 
 // 4) Also output the second element in your "main goals" variable
 
-alert(Course_goals[1]);
+alert(courseGoals[1]);
 
 // 5) Add a custom command that does the following:
 //    - Use your "main goals" variable and access an element by its identifier
