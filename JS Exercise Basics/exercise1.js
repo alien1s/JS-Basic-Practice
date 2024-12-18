@@ -25,19 +25,19 @@ alert(courseGoals);
 
 // 3) Try "grouping" the three variables together and still output their values thereafter
 
-let My_Course = {
-  courseName,
-  coursePrice,
-  courseGoals,
+let myCourse = {
+  name: courseName,
+  price: coursePrice,
+  goals: courseGoals,
 };
 
-alert(My_Course.courseName);
-alert(My_Course.coursePrice);
-alert(My_Course.courseGoals);
+alert(myCourse.name);
+alert(myCourse.price);
+alert(myCourse.goals);
 
 // 4) Also output the second element in your "main goals" variable
 
-alert(courseGoals[1]);
+alert(myCourse.goals[1]);
 
 // 5) Add a custom command that does the following:
 //    - Use your "main goals" variable and access an element by its identifier
@@ -54,5 +54,5 @@ function getListitems(array, number){
 }
 // 6) Execute your custom command from (5) and output ("alert") the result
 
-let FristGoal = getListitems(My_Course.Course_goals, 1);
+let FristGoal = getListitems(myCourse.goals, 1);
 alert(FristGoal);
