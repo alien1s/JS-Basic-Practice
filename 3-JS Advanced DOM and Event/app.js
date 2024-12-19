@@ -1,9 +1,5 @@
 // document.body.children[1].children[0].href = 'https://google.com';
 
-// console.dir(document);
-// alert();
-// window.alert();
-
 let anchorElement = document.getElementById("external-link");
 anchorElement.href = "https://google.com";
 
@@ -43,5 +39,6 @@ H1Element.parentElement.append(H1Element);
 
 let anotherParagraph = document.createElement("p");
 anotherParagraph.innerHTML =
-  "Hi this is <strong>Important!</strong> " + "It's very <span>important</span>";
+'Hi this is <strong>Important!</strong> ' +
+'It\'s very <span>important</span>';
 document.body.append(anotherParagraph);
