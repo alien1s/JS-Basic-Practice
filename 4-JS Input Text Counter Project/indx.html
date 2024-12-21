@@ -8,24 +8,21 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <main>
-      <section id="form">
-        <div>
-          <label for="product_name">Product Name</label>
-        </div>
-        <div id="counter_contianer">
-          <input
-            type="text"
-            name="product_name"
-            id="product_name"
-            maxlength="60"
-          />
-          <p><span>60</span>/60</p>
-        </div>
-      </section>
-      <section id="b-contianer">
+    <form>
+      <div class="control">
+        <label for="product-name">Product Name</label>
+        <input
+          type="text"
+          name="product-name"
+          id="product-name"
+          maxlength="60"
+        />
+        <span id="charcount"><span id="remaining-chars">60</span>/60</span>
+      </div>
+
+      <div id="b-contianer">
         <button type="submit" id="b-s">Submit</button>
-      </section>
-    </main>
+      </div>
+    </form>
   </body>
 </html>
