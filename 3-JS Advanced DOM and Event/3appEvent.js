@@ -1,10 +1,3 @@
-// let paragraphElement = document.querySelector("p");
-
-// function changeParagraphText() {
-//   paragraphElement.textContent = "Clicked!";
-// }
-
-// paragraphElement.addEventListener("click", changeParagraphText);
 
 // let inputElement = document.querySelector("input");
 
@@ -14,3 +7,12 @@
 // }
 
 // inputElement.addEventListener("input", retrieveUserInput);
+
+let paragraphElement = document.querySelector('p');
+
+function changeParagraphText(){
+  paragraphElement.textContent = 'Clicked!';
+  console.log('Text Changed');
+}
+
+paragraphElement.addEventListener('click', changeParagraphText);
