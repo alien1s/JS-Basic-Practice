@@ -1,13 +1,3 @@
-
-// let inputElement = document.querySelector("input");
-
-// function retrieveUserInput() {
-//   let enterdText = inputElement.value;
-//   console.log(enterdText);
-// }
-
-// inputElement.addEventListener("input", retrieveUserInput);
-
 let paragraphElement = document.querySelector('p');
 
 function changeParagraphText(){
@@ -16,3 +6,14 @@ function changeParagraphText(){
 }
 
 paragraphElement.addEventListener('click', changeParagraphText);
+
+// ---------------------------------------------------
+
+let inputElement = document.querySelector('input');
+
+function extractUserInput(){
+  let enterdText = inputElement.value;
+  console.log(enterdText);
+}
+
+inputElement.addEventListener('input',extractUserInput);
