@@ -1,19 +1,24 @@
-let paragraphElement = document.querySelector('p');
+let paragraphElement = document.querySelector("p");
 
-function changeParagraphText(){
-  paragraphElement.textContent = 'Clicked!';
-  console.log('Text Changed');
+function changeParagraphText(event) {
+  // paragraphElement.textContent = 'Clicked!';
+  event.target.textContent = "Clicked!";
+  console.log("Text Changed");
+  console.log(event);
 }
 
-paragraphElement.addEventListener('click', changeParagraphText);
+paragraphElement.addEventListener("click", changeParagraphText);
 
 // ---------------------------------------------------
 
-let inputElement = document.querySelector('input');
+let inputElement = document.querySelector("input");
 
-function extractUserInput(){
-  let enterdText = inputElement.value;
+function extractUserInput(event) {
+  // let enterdText = inputElement.value;
+  // let enterdText = event.target.value;
+  let enterdText = event.data;
   console.log(enterdText);
+  console.log(event);
 }
 
-inputElement.addEventListener('input',extractUserInput);
+inputElement.addEventListener("input", extractUserInput);
