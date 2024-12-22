@@ -20,22 +20,29 @@ for (let i = 0; i < users.length; i++) {
   console.log(users[i]);
 }
 
-//This code still works today and you can absolutely use it instead of using a for-of loop. 
-// But of course it's longer and a bit more clunky, 
+//This code still works today and you can absolutely use it instead of using a for-of loop.
+// But of course it's longer and a bit more clunky,
 // so there is no strong reason to use that code, unless you prefer it.
 
 //------------for...in loop-----------
 
 const loggedInUser = {
-    name: 'Saif',
-    age: 27,
-    isAdmin: true
-}
+  name: "Saif",
+  age: 27,
+  isAdmin: true,
+};
 
 for (const propertyName in loggedInUser) {
-    console.log(propertyName);
-    console.log(loggedInUser[propertyName]);
-};
+  console.log(propertyName);
+  console.log(loggedInUser[propertyName]);
+}
 
 //-------------while loop----------
 
+let isFinished = false;
+
+while (!isFinished) {
+  isFinished = confirm("Do you want to quit?");
+}
+
+console.log("Done!");
