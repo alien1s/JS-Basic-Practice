@@ -32,7 +32,10 @@ const loggedInUser = {
     isAdmin: true
 }
 
-
 for (const propertyName in loggedInUser) {
     console.log(propertyName);
+    console.log(loggedInUser[propertyName]);
 };
+
+//-------------while loop----------
+
