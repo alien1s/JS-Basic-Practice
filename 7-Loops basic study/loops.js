@@ -24,4 +24,15 @@ for (let i = 0; i < users.length; i++) {
 // But of course it's longer and a bit more clunky, 
 // so there is no strong reason to use that code, unless you prefer it.
 
-//-----------------------
+//------------for...in loop-----------
+
+const loggedInUser = {
+    name: 'Saif',
+    age: 27,
+    isAdmin: true
+}
+
+
+for (const propertyName in loggedInUser) {
+    console.log(propertyName);
+};
