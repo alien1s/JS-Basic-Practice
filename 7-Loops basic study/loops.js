@@ -1,8 +1,9 @@
+//------for loop------
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
 
-// ------------------
+// --------for..of----------
 
 const users = ["Saif", "Mamd007", "Mahmoud"];
 
@@ -10,7 +11,7 @@ for (const user of users) {
   console.log(user);
 }
 
-//------------------
+//--------for loop in arrays----------
 
 //Years ago, we didn't have the for-of loop in JavaScript.
 //To still loop through all the elements of an array, this code could be used:
