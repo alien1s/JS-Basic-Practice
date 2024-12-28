@@ -1,5 +1,5 @@
 
-// -----------------------calculateSumButtonElement-------------------
+// -----------------------JavaScript CalculatorSumButton-------------------
 
 const calculateSumButtonElement = document.querySelector("#calculator button");
 
