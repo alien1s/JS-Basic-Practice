@@ -64,5 +64,47 @@ function displayUserData(event) {
 
 displayUserDataButtonElement.addEventListener("click", displayUserData);
 
+// ---------------------------------Statistics Roll the Dice------------------------------------------
 
-// ---------------------------------------------------------------------------
+const rollDiceButtonElement = document.querySelector("#statistics button");
+
+function rollDice() {
+  return Math.floor(Math.random() * 6) + 1; // Math.floor(): 5.65=>5
+}
+
+function driveNumberOfDiceRoll(event) {
+  const targetNumberInputElement =
+    document.getElementById("user-target-number");
+  const diceRollLIstElement = document.getElementById("dice-rolls");
+
+  const enterdNumber = targetNumberInputElement.value; // this is return string if we wanna to handeld as anumber we write it in this way "+targetNumberInputElement.value"
+
+  diceRollLIstElement.innerHTML = "";
+
+  let hasRollTargetNumber = false;
+  let numberOfRolls = 0;
+
+  while (!hasRollTargetNumber) {
+    const rolledNumber = rollDice();
+    // if (rolledNumber == enterdNumber) {
+    //     hasRollTargetNumber = true;
+    // }
+
+    numberOfRolls++;
+    const newRollItemListElement = document.createElement("li");
+    const outputText = "Roll" + numberOfRolls + ":" + rolledNumber;
+    newRollItemListElement.textContent = outputText;
+    diceRollLIstElement.append(newRollItemListElement);
+    hasRollTargetNumber = rolledNumber == enterdNumber;
+  }
+
+  const outputTotalRollsElement = document.getElementById("output-total-rolls");
+  const outputTargetNumberElement = document.getElementById(
+    "output-target-number"
+  );
+
+  outputTotalRollsElement.textContent = numberOfRolls;
+  outputTargetNumberElement.textContent = enterdNumber;
+}
+
+rollDiceButtonElement.addEventListener("click", driveNumberOfDiceRoll);
