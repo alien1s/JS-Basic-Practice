@@ -1,4 +1,3 @@
-
 // -----------------------JavaScript CalculatorSumButton-------------------
 
 const calculateSumButtonElement = document.querySelector("#calculator button");
@@ -21,8 +20,22 @@ function calculateSum(event) {
 calculateSumButtonElement.addEventListener("click", calculateSum);
 
 
-// -----------------------------------------------------------------------
+// --------------------------------Highlight Links---------------------------------------
 
 
+const highlightLinksButtonElement = document.querySelector(
+  "#highlight-links button"
+);
+
+function highlightLinks(event) {
+  const anchorElements = document.querySelectorAll("#highlight-links a");
+
+  for (const anchorElement of anchorElements) {
+    anchorElement.classList.add("highlight");
+  }
+}
+
+highlightLinksButtonElement.addEventListener("click", highlightLinks);
 
 
+// ----------------------------------------------------------------------
