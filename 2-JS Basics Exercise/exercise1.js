@@ -28,9 +28,9 @@ alert(courseGoals);
 // 3) Try "grouping" the three variables together and still output their values thereafter
 
 let myCourse = {
-  name: courseName,
-  price: coursePrice,
-  goals: courseGoals,
+  name: "Zone",
+  price: 5000 + "$",
+  goals: ["learn", "study", "bulid"],
 };
 
 alert("myCourse data is:");
