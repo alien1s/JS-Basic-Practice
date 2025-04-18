@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- <script src="app.js" defer></script> -->
+    <script src="dom.js" defer></script>
+</head>
+<body>
+  <div>
+    <div>
+      <h1 id="first-head" class="first-head">Hi there!</h1>
+      <p id="only-paragraph" class="only-paragraph">
+        This is a
+        <a  id="external-link" class="external-class" href="#">link</a>
+      </p>
+      <p id="click-paragraph">Click Me</p>
+      <input type="text">
+    </div>
+    
+    <form>
+      <div id="control" class="control">
+          <label for="product-name">Product Name</label>
+          <input type="text" id="product-name" name="product-name" maxlength="60">
+          <span id="charcount">
+              <span id="remaining-chars">60</span>/60
+          </span>
+      </div>
+      
+      <button type="submit">Submit</button>    
+    </form>
+  </div>
+  
+  <main>
+    <h1>Advanced JavaScript</h1>
+    <p>Working with the DOM - Exercise</p>
+
+    <section>
+      <h2>Why JavaScript?</h2>
+      <p>
+        JavaScript is a programming language which can be executed by the
+        browser, after the page was loaded.
+      </p>
+      <p>
+        With JavaScript, you, as a developer, can access, read and manipulate
+        the parsed HTML code ("the DOM") to add additional behavior and features
+        to the page.
+      </p>
+      <p id="frist-main-paragraph">For example, you can make the below button remove this text!</p>
+      <button>Remove Paragraph</button>
+      <p id="seconed-main-paragraph">
+        Or take the next button: It adds a blue background to the first
+        paragraph.
+      </p>
+      <button id="seconed-main-button">Add Blue Background Color</button>
+    </section>
+  </main>
+  
+</body>
+</html>
