@@ -118,11 +118,11 @@ body {
     border-color: rgb(221, 199, 5);
   }
 
-  #frist-main-paragraph.remove-class{
+  .remove-class{
     display: none;
   }
 
-  #seconed-main-paragraph.changebackclass{
+  .changebackclass{
     background-color: blue;
   }
 
