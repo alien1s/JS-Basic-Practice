@@ -58,7 +58,7 @@ body {
   
 
   
-  /* #charcount {
+  #charcount {
     color: rgb(105, 101, 75);
   }
   
@@ -68,4 +68,12 @@ body {
   
   #remaining-chars.warning {
     color:rgb(211, 109, 26);
-  } */
+  }
+
+  input.error {
+    background-color: rgb(248, 145, 145);
+  }
+  
+  #remaining-chars.error {
+    color:rgb(211, 32, 26);
+  }
